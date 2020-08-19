@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="750.0">
+         <children>
+            <ImageView fx:id="iv_screen" fitHeight="428.0" fitWidth="762.0" layoutX="1.0" layoutY="-1.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="iv_webcam" fitHeight="193.0" fitWidth="214.0" layoutX="554.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lbl" layoutX="130.0" layoutY="528.0" prefHeight="18.0" prefWidth="132.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

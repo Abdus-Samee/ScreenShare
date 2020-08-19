@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXHelloCVController">
+    <bottom>
+        <HBox alignment="center" prefHeight="151.0" prefWidth="498.0">
+            <padding>
+                <Insets bottom="25" left="25" right="25" top="25" />
+            </padding>
+         <Label fx:id="lbl" prefHeight="18.0" prefWidth="161.0" text="Label" />
+            <Button fx:id="button" alignment="center" onAction="#startCamera" text="Start Camera" />
+         <Button fx:id="share" mnemonicParsing="false" onAction="#startShare" text="Sharing" />
+        </HBox>
+    </bottom>
+    <center>
+        <ImageView fx:id="currentFrame" />
+    </center>
+</BorderPane>
